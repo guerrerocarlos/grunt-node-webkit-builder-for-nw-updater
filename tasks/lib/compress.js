@@ -49,6 +49,7 @@ module.exports = function(grunt) {
     };
 
     exports.generateFolder = function(files, dest, type) {
+
         return Q.all(files.map(function(srcFile) {
             return utils.copyFile(
                 srcFile.src,
@@ -72,12 +73,11 @@ module.exports = function(grunt) {
         }
     };
 
-    exports.generateRelease = function(relaseFile, zipPath, type, nwpath) {
-        console.log(relaseFile, zipPath, type, nwpath);
+    exports.generateRelease = function(relaseFile, zipPath, type, releaseFolder ,nwpath) {
         var releaseDone = Q.defer(),
+            nwpath_rs,
             ws = fs.createWriteStream(relaseFile),
-            zipStream = fs.createReadStream(zipPath),
-            nwpath_rs;
+            zipStream = fs.createReadStream(zipPath)
 
         ws.on('error', function(err) {
             grunt.fail.fatal(err);
@@ -101,9 +101,17 @@ module.exports = function(grunt) {
                 grunt.fail.fatal(err);
             });
 
-            nwpath_rs.on('end', function(){
-                zipStream.pipe(ws);
-            });
+            //if(type!="win"){
+                var packagefile = fs.createWriteStream(releaseFolder+"/package.nw")
+                packagefile.on('error', function(err) {
+                    grunt.fail.fatal(err);
+                });
+                zipStream.pipe(packagefile)
+            //}else{
+            //  nwpath_rs.on('end', function(){
+            //    zipStream.pipe(ws);
+            //  });
+            //}
 
             nwpath_rs.pipe(ws, { end: false });
         }

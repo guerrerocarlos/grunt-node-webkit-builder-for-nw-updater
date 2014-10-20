@@ -252,6 +252,7 @@ module.exports = function(grunt) {
             releasePathApp,
             zipFile,
             plattform.type,
+            releaseFolder,
             (plattform.type !== 'mac' ? path.resolve(plattform.dest, plattform.nwpath) : null)
           )
           );
