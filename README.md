@@ -2,7 +2,7 @@
 
 This is a fork from [grunt-node-webkit-builder](https://github.com/mllrsohn/grunt-node-webkit-builder) specially modified and tested to work with [nw-updater](https://www.npmjs.org/package/nw-updater)
 
-[grunt-node-webkit-builder-for-nw-updater](https://github.com/guerrerocarlos/grunt-node-webkit-builder-for-nw-updater) 
+[![NPM](https://nodei.co/npm/grunt-node-webkit-builder-for-nw-updater.png?downloads=true)](https://nodei.co/npm/grunt-node-webkit-builder-for-nw-updater/)
 
 # grunt-node-webkit-builder
 
