@@ -2,7 +2,7 @@
   "name": "grunt-node-webkit-builder-for-node-updater",
   "description": "Let's you build your node webkit apps with grunt",
   "version": "0.1.21",
-  "homepage": "https://github.com/mllrsohn/grunt-node-webkit-builder",
+  "homepage": "https://github.com/guerrerocarlos/grunt-node-webkit-builder-for-nw-updater",
   "author": {
     "name": "Steffen Müller",
     "email": "steffen@mllrsohn.com"
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:mllrsohn/grunt-node-webkit-builder.git"
+    "url": "git@github.com:guerrerocarlos/grunt-node-webkit-builder-for-nw-updater.git"
   },
   "bugs": {
     "url": "https://github.com/mllrsohn/grunt-node-webkit-builder/issues"

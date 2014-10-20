@@ -1,4 +1,9 @@
+## Important
+
+    This is a fork from [grunt-node-webkit-builder](https://github.com/mllrsohn/grunt-node-webkit-builder) specially modified and tested to work with [nw-updater](https://www.npmjs.org/package/nw-updater)
+
 # grunt-node-webkit-builder
+
 
 > Let's you build your node-webkit apps for mac, win and linux with grunt. It will download the prebuilt binaries for a specify version, unpacks it, creates a release folder, create the app.nw file for a specified directory and copys the app.nw file where it belongs.
 
