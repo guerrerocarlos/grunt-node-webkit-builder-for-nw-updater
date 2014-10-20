@@ -1,6 +1,6 @@
 ## Important
 
-    This is a fork from [grunt-node-webkit-builder](https://github.com/mllrsohn/grunt-node-webkit-builder) specially modified and tested to work with [nw-updater](https://www.npmjs.org/package/nw-updater)
+This is a fork from [grunt-node-webkit-builder](https://github.com/mllrsohn/grunt-node-webkit-builder) specially modified and tested to work with [nw-updater](https://www.npmjs.org/package/nw-updater)
 
 # grunt-node-webkit-builder
 
