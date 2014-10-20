@@ -1,5 +1,5 @@
 {
-  "name": "grunt-node-webkit-builder-for-node-updater",
+  "name": "grunt-node-webkit-builder-for-nw-updater",
   "description": "Let's you build your node webkit apps with grunt",
   "version": "0.1.21",
   "homepage": "https://github.com/guerrerocarlos/grunt-node-webkit-builder-for-nw-updater",
